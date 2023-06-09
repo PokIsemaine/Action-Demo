@@ -40,3 +40,4 @@ jobs:
           comment-always: true
           gh-pages-branch: gh-pages
           alert-comment-cc-users: '@PokIsemaine'
+          auto-push: true
