@@ -33,3 +33,4 @@ jobs:
           comment-on-alert: true
           # Mention @rhysd in the commit comment
           # alert-comment-cc-users: '@rhysd'
+          comment-always: true
