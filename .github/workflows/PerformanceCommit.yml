@@ -27,6 +27,7 @@ jobs:
           tool: 'go'
           output-file-path: output.txt
           external-data-json-path: ./cache/benchmark-data.json
+          benchmark-data-dir-path: benchmark-monitoring
           fail-on-alert: true
           alert-threshold: '150%'
           fail-threshold: '200%'
