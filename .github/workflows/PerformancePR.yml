@@ -16,7 +16,7 @@ jobs:
         run: go test -bench 'BenchmarkFib' | tee output.txt
       # Download previous benchmark result from cache (if exists)
       - name: Download previous benchmark data
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ./cache
           key: ${{ runner.os }}-benchmark
@@ -26,7 +26,6 @@ jobs:
         with:
           tool: 'go'
           output-file-path: output.txt
-          benchmark-data-dir-path: benchmark-monitoring
           fail-on-alert: true
           alert-threshold: '150%'
           fail-threshold: '200%'
