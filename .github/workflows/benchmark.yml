@@ -1,5 +1,11 @@
 name: BenchMark Monitor
-on: [push, pull_request]
+on: [push]
+
+permissions:
+  # deployments permission to deploy GitHub pages website
+  deployments: write
+  # contents permission to update benchmark contents in gh-pages branch
+  contents: write
 
 jobs:
   benchmark:
@@ -33,3 +39,5 @@ jobs:
           comment-on-alert: true
           # Mention @rhysd in the commit comment
           # alert-comment-cc-users: '@rhysd'
+          # Push and deploy GitHub pages branch automatically
+          auto-push: true
