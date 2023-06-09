@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686318017637,
+  "lastUpdate": 1686318379391,
   "repoUrl": "https://github.com/PokIsemaine/Action-Demo",
   "entries": {
     "Benchmark": [
@@ -280,6 +280,38 @@ window.BENCHMARK_DATA = {
             "value": 50149,
             "unit": "ns/op",
             "extra": "23848 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Tanyuu",
+            "username": "Tanyuu"
+          },
+          "committer": {
+            "name": "Tanyuu",
+            "username": "Tanyuu"
+          },
+          "id": "a992ef30d5df4435d55bdd356dfc45a92d7e1484",
+          "message": "10 to 20",
+          "timestamp": "2023-06-09T13:39:07Z",
+          "url": "https://github.com/PokIsemaine/Action-Demo/pull/3/commits/a992ef30d5df4435d55bdd356dfc45a92d7e1484"
+        },
+        "date": 1686318378932,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 408.7,
+            "unit": "ns/op",
+            "extra": "2934580 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 52111,
+            "unit": "ns/op",
+            "extra": "21841 times\n2 procs"
           }
         ]
       }
