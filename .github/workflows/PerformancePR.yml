@@ -1,0 +1,41 @@
+name: Performance for Pull Request
+on:
+  pull_request_target:
+    branches: [ master ]
+
+jobs:
+  benchmark:
+    name: Performance regression check
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v1
+      # Run benchmark with `go test -bench` and stores the output to a file
+      - name: Run benchmark
+        run: go test -bench 'BenchmarkFib' | tee output.txt
+      # Download previous benchmark result from cache (if exists)
+      - name: Download previous benchmark data
+        uses: actions/cache@v1
+        with:
+          path: ./cache
+          key: ${{ runner.os }}-benchmark
+      # Run `github-action-benchmark` action
+      - name: Store benchmark result
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          tool: 'go'
+          output-file-path: output.txt
+          external-data-json-path: ./cache/benchmark-data.json
+          fail-on-alert: true
+          alert-threshold: '150%'
+          fail-threshold: '200%'
+          # GitHub API token to make a commit comment
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # Enable Job Summary for PRs
+          summary-always: true
+          # Enable alert commit comment
+          comment-on-alert: true
+          comment-always: true
+          gh-pages-branch: gh-pages
+          alert-comment-cc-users: '@PokIsemaine'

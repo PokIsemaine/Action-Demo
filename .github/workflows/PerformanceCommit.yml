@@ -1,10 +1,13 @@
-name: BenchMark Monitor
-on: [push, pull_request]
+name: Performance for commit
+on:
+  push:
+    branches: [ master ]
 
 jobs:
   benchmark:
     name: Performance regression check
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v1
@@ -25,12 +28,14 @@ jobs:
           output-file-path: output.txt
           external-data-json-path: ./cache/benchmark-data.json
           fail-on-alert: true
+          alert-threshold: '150%'
+          fail-threshold: '200%'
           # GitHub API token to make a commit comment
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # Enable Job Summary for PRs
           summary-always: true
           # Enable alert commit comment
           comment-on-alert: true
-          # Mention @rhysd in the commit comment
-          # alert-comment-cc-users: '@rhysd'
           comment-always: true
+          gh-pages-branch: gh-pages
+          alert-comment-cc-users: '@PokIsemaine'
