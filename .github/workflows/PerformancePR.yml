@@ -26,16 +26,17 @@ jobs:
         with:
           tool: 'go'
           output-file-path: output.txt
+          external-data-json-path: ./cache/benchmark-data.json
           fail-on-alert: true
           alert-threshold: '150%'
           fail-threshold: '200%'
           # GitHub API token to make a commit comment
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # Enable Job Summary for PRs
-          summary-always: true
+          # summary-always: true
           # Enable alert commit comment
           comment-on-alert: true
           comment-always: true
           # gh-pages-branch: gh-pages
-          alert-comment-cc-users: '@PokIsemaine'
+          # alert-comment-cc-users: '@PokIsemaine'
           # auto-push: true
