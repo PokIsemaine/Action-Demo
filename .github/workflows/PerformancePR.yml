@@ -19,7 +19,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ./cache
-          key: ${{ runner.os }}-benchmark
+          key: ${{ runner.os }}-PerformancePR-benchmark
       # Run `github-action-benchmark` action
       - name: Store benchmark result
         uses: benchmark-action/github-action-benchmark@v1
@@ -37,6 +37,3 @@ jobs:
           # Enable alert commit comment
           comment-on-alert: true
           comment-always: true
-          # gh-pages-branch: gh-pages
-          # alert-comment-cc-users: '@PokIsemaine'
-          # auto-push: true
