@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686359574061,
+  "lastUpdate": 1686359886921,
   "repoUrl": "https://github.com/PokIsemaine/Action-Demo",
   "entries": {
     "Benchmark": [
@@ -532,6 +532,42 @@ window.BENCHMARK_DATA = {
             "value": 41074,
             "unit": "ns/op",
             "extra": "28383 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "851892190@qq.com",
+            "name": "PokIsemaine",
+            "username": "PokIsemaine"
+          },
+          "committer": {
+            "email": "851892190@qq.com",
+            "name": "PokIsemaine",
+            "username": "PokIsemaine"
+          },
+          "distinct": true,
+          "id": "f82b96196e9c4195e0e6beb892e11cd4b97c41fb",
+          "message": "测试性能优化",
+          "timestamp": "2023-06-10T09:17:35+08:00",
+          "tree_id": "5cdedf9921a1fc55a97e19a25f8c0fe102cfa521",
+          "url": "https://github.com/PokIsemaine/Action-Demo/commit/f82b96196e9c4195e0e6beb892e11cd4b97c41fb"
+        },
+        "date": 1686359886485,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 50505,
+            "unit": "ns/op",
+            "extra": "23744 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 50815,
+            "unit": "ns/op",
+            "extra": "23668 times\n2 procs"
           }
         ]
       }
