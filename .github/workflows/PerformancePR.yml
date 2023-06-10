@@ -26,6 +26,7 @@ jobs:
         with:
           tool: 'go'
           output-file-path: output.txt
+          external-data-json-path: ./cache/benchmark-data.json
           fail-on-alert: true
           alert-threshold: '150%'
           fail-threshold: '200%'
