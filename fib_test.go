@@ -2,14 +2,11 @@ package Action_Demo
 
 import (
 	"testing"
-	"fmt"
 )
 
 func BenchmarkFib10(b *testing.B) {
-	var u uint = 20
-	fmt.Println(u)
 	for i := 0; i < b.N; i++ {
-		var _ = Fib(u)
+		var _ = Fib(10)
 	}
 }
 
