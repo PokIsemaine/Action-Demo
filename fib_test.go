@@ -2,6 +2,7 @@ package Action_Demo
 
 import (
 	"testing"
+	"fmt"
 )
 
 func BenchmarkFib10(b *testing.B) {
