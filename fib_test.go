@@ -5,8 +5,10 @@ import (
 )
 
 func BenchmarkFib10(b *testing.B) {
+	var u uint = 20
+	fmt.Println(u)
 	for i := 0; i < b.N; i++ {
-		var _ = Fib(40)
+		var _ = Fib(u)
 	}
 }
 
