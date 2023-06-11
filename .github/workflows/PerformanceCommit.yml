@@ -3,11 +3,16 @@ on:
   push:
     branches: [ master ]
 
+permissions:
+  # deployments permission to deploy GitHub pages website
+  deployments: write
+  # contents permission to update benchmark contents in gh-pages branch
+  contents: write
+
 jobs:
   benchmark:
     name: Performance regression check
     runs-on: ubuntu-latest
-    permissions: write-all
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-go@v3
