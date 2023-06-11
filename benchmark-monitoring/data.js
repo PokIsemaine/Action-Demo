@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686474195553,
+  "lastUpdate": 1686474886737,
   "repoUrl": "https://github.com/PokIsemaine/Action-Demo",
   "entries": {
     "Benchmark": [
@@ -934,6 +934,48 @@ window.BENCHMARK_DATA = {
             "value": 41981,
             "unit": "ns/op",
             "extra": "28291 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "136227341+ZhouSiLe@users.noreply.github.com",
+            "name": "周思乐",
+            "username": "ZhouSiLe"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4e631390e528bcf764f4c93d6fb39eaa0f69e8a4",
+          "message": "fix Fib30",
+          "timestamp": "2023-06-11T17:14:18+08:00",
+          "tree_id": "f63f37952b3b97e1d1d74555ee6b2786ee0a0d5b",
+          "url": "https://github.com/PokIsemaine/Action-Demo/commit/4e631390e528bcf764f4c93d6fb39eaa0f69e8a4"
+        },
+        "date": 1686474886025,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 408.9,
+            "unit": "ns/op",
+            "extra": "2934169 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 50529,
+            "unit": "ns/op",
+            "extra": "23754 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib30",
+            "value": 6274514,
+            "unit": "ns/op",
+            "extra": "192 times\n2 procs"
           }
         ]
       }
