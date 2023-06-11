@@ -21,3 +21,9 @@ func BenchmarkFib30(b *testing.B) {
 		var _ = Fib(30)
 	}
 }
+
+func BenchmarkFib30(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		var _ = Fib(20)
+	}
+}
