@@ -32,8 +32,6 @@ jobs:
           fail-threshold: '200%'
           # GitHub API token to make a commit comment
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          # Enable Job Summary for PRs
-          # summary-always: true
           # Enable alert commit comment
           comment-on-alert: true
           comment-always: true
