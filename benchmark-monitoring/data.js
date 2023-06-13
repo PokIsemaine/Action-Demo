@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686661759445,
+  "lastUpdate": 1686661897328,
   "repoUrl": "https://github.com/PokIsemaine/Action-Demo",
   "entries": {
     "Benchmark": [
@@ -1060,6 +1060,48 @@ window.BENCHMARK_DATA = {
             "value": 42415317,
             "unit": "ns/op\t40537848 B/op\t 1346268 allocs/op",
             "extra": "25 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "851892190@qq.com",
+            "name": "PokIsemaine",
+            "username": "PokIsemaine"
+          },
+          "committer": {
+            "email": "851892190@qq.com",
+            "name": "PokIsemaine",
+            "username": "PokIsemaine"
+          },
+          "distinct": true,
+          "id": "6f1a9b7f8782b21ef6835b40c593863fb4aa178d",
+          "message": "恢复",
+          "timestamp": "2023-06-13T21:11:05+08:00",
+          "tree_id": "2b98d3815d41df12eaf9372502b8071693252314",
+          "url": "https://github.com/PokIsemaine/Action-Demo/commit/6f1a9b7f8782b21ef6835b40c593863fb4aa178d"
+        },
+        "date": 1686661896895,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 2860,
+            "unit": "ns/op\t    2568 B/op\t      88 allocs/op",
+            "extra": "392647 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 365562,
+            "unit": "ns/op\t  329408 B/op\t   10945 allocs/op",
+            "extra": "3258 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib30",
+            "value": 44421398,
+            "unit": "ns/op\t40537858 B/op\t 1346268 allocs/op",
+            "extra": "27 times\n2 procs"
           }
         ]
       }
