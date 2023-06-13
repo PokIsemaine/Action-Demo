@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1686474886737,
+  "lastUpdate": 1686661318338,
   "repoUrl": "https://github.com/PokIsemaine/Action-Demo",
   "entries": {
     "Benchmark": [
@@ -976,6 +976,48 @@ window.BENCHMARK_DATA = {
             "value": 6274514,
             "unit": "ns/op",
             "extra": "192 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "851892190@qq.com",
+            "name": "PokIsemaine",
+            "username": "PokIsemaine"
+          },
+          "committer": {
+            "email": "851892190@qq.com",
+            "name": "PokIsemaine",
+            "username": "PokIsemaine"
+          },
+          "distinct": true,
+          "id": "8d9bfc9a94b81f79352c63680995e817f082c6eb",
+          "message": "添加内存占用测试",
+          "timestamp": "2023-06-13T21:01:22+08:00",
+          "tree_id": "2b98d3815d41df12eaf9372502b8071693252314",
+          "url": "https://github.com/PokIsemaine/Action-Demo/commit/8d9bfc9a94b81f79352c63680995e817f082c6eb"
+        },
+        "date": 1686661317264,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 3322,
+            "unit": "ns/op\t    2568 B/op\t      88 allocs/op",
+            "extra": "329085 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 416695,
+            "unit": "ns/op\t  329408 B/op\t   10945 allocs/op",
+            "extra": "2772 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib30",
+            "value": 51351635,
+            "unit": "ns/op\t40537866 B/op\t 1346268 allocs/op",
+            "extra": "21 times\n2 procs"
           }
         ]
       }
