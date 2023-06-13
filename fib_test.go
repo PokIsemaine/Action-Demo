@@ -5,8 +5,6 @@ import (
 )
 
 func BenchmarkFib10(b *testing.B) {
-	s := make([]int, 10000)
-	_ = s
 	for i := 0; i < b.N; i++ {
 		var _ = Fib(5)
 	}
