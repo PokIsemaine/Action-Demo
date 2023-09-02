@@ -31,7 +31,7 @@ jobs:
       - name: Check License Header
         uses: apache/skywalking-eyes/header@main      # always prefer to use a revision instead of `main`.
         with:
-          config: .github/.licenserc.yaml
+          config: .github/licenserc.yaml
           token: ${{ secrets.GITHUB_TOKEN }}
           # with:
           # log: debug # optional: set the log level. The default value is `info`.
