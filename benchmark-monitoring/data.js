@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1694232116987,
+  "lastUpdate": 1694232332167,
   "repoUrl": "https://github.com/PokIsemaine/Action-Demo",
   "entries": {
     "Benchmark": [
@@ -1804,6 +1804,84 @@ window.BENCHMARK_DATA = {
             "value": 1346268,
             "unit": "allocs/op",
             "extra": "26 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "851892190@qq.com",
+            "name": "PokIsemaine",
+            "username": "PokIsemaine"
+          },
+          "committer": {
+            "email": "851892190@qq.com",
+            "name": "PokIsemaine",
+            "username": "PokIsemaine"
+          },
+          "distinct": true,
+          "id": "4e66ffd1c585eec250fa647f8ff3e6ca399cf219",
+          "message": "fix: Fix License Header",
+          "timestamp": "2023-09-09T12:04:51+08:00",
+          "tree_id": "c8b3e66a8eea6c96d121044f8f21e12b027ac543",
+          "url": "https://github.com/PokIsemaine/Action-Demo/commit/4e66ffd1c585eec250fa647f8ff3e6ca399cf219"
+        },
+        "date": 1694232331364,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10 - ns/op",
+            "value": 3668,
+            "unit": "ns/op",
+            "extra": "329786 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib10 - B/op",
+            "value": 2568,
+            "unit": "B/op",
+            "extra": "329786 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib10 - allocs/op",
+            "value": 88,
+            "unit": "allocs/op",
+            "extra": "329786 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20 - ns/op",
+            "value": 464751,
+            "unit": "ns/op",
+            "extra": "2659 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20 - B/op",
+            "value": 329408,
+            "unit": "B/op",
+            "extra": "2659 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20 - allocs/op",
+            "value": 10945,
+            "unit": "allocs/op",
+            "extra": "2659 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib30 - ns/op",
+            "value": 57835757,
+            "unit": "ns/op",
+            "extra": "18 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib30 - B/op",
+            "value": 40537880,
+            "unit": "B/op",
+            "extra": "18 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib30 - allocs/op",
+            "value": 1346268,
+            "unit": "allocs/op",
+            "extra": "18 times\n2 procs"
           }
         ]
       }
