@@ -24,7 +24,7 @@ header:
     - 'examples/*'
     - 'LICENSE'
     - 'NOTICE'
-    - 'github/*'
+    - '.github/*'
 
   comment: on-failure
 
