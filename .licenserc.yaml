@@ -32,4 +32,4 @@ header:
     Go:
       extensions:
         - ".go"
-    comment_style_id: DoubleSlash
+      comment_style_id: DoubleSlash
